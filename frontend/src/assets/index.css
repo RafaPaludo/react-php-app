@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Input {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	font-size: 15px;
+  background-color: var(--color-surface);
+  --text-field-selection-color: var(--focus-a5);
+  --text-field-focus-color: var(--focus-8);
+  --text-field-border-width: 1px;
+  background-clip: content-box;
+  box-shadow: inset 0 0 0 var(--text-field-border-width) var(--gray-a7);
+  color: var(--gray-12);
+}
+
+.Input:focus,
+.Textarea:focus {
+	box-shadow: 0 0 0 2px var(--focus-8);;
+}
+
+.Input::selection,
+.Textarea::selection {
+	background-color: var(--black-a6);
+	color: white;
+}
+
+.Input {
+	padding: 0 10px;
+	height: 35px;
+	line-height: 1;
+}
+
+.active .Button-NavLink {
+  color: white;
+  background-color: var(--blue-9);
+}

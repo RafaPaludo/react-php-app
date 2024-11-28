@@ -1,0 +1,62 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/violet.css";
+@import "@radix-ui/colors/mauve.css";
+
+/* reset */
+input,
+textarea,
+button {
+	all: unset;
+	box-sizing: border-box;
+}
+
+.FormField {
+	display: grid;
+	margin-bottom: 10px;
+}
+
+.FormLabel {
+  font-size: var(--font-size-2);
+  --line-height: var(--line-height-2);
+  --letter-spacing: var(--letter-spacing-2);
+  font-weight: var(--font-weight-bold);
+}
+
+.FormMessage {
+	font-size: 13px;
+	color: red;
+	opacity: 0.8;
+}
+
+.Input {
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	font-size: 15px;
+  background-color: var(--color-surface);
+  --text-field-selection-color: var(--focus-a5);
+  --text-field-focus-color: var(--focus-8);
+  --text-field-border-width: 1px;
+  background-clip: content-box;
+  box-shadow: inset 0 0 0 var(--text-field-border-width) var(--gray-a7);
+  color: var(--gray-12);
+}
+
+.Input:focus,
+.Textarea:focus {
+	box-shadow: 0 0 0 2px var(--focus-8);;
+}
+
+.Input::selection,
+.Textarea::selection {
+	background-color: var(--black-a6);
+	color: white;
+}
+
+.Input {
+	padding: 0 10px;
+	height: 35px;
+	line-height: 1;
+}
